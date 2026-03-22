@@ -12,10 +12,16 @@
 
     :root {
       --accent: #14B8A6;
-      --bg: #0A0A0A;
-      --surface: #111111;
-      --glass: rgba(255,255,255,0.04);
-      --glass-border: rgba(255,255,255,0.08);
+      --bg: #FAFAFA;
+      --surface: #FFFFFF;
+      --glass: rgba(255,255,255,0.8);
+      --glass-border: rgba(0,0,0,0.08);
+      --text-primary: #1a1a2e;
+      --text-secondary: #4a4a6a;
+      --text-muted: #8a8aa0;
+      --card-bg: #FFFFFF;
+      --section-alt: #FFF5F8;
+      --nav-scrolled: rgba(255,255,255,0.92);
     }
 
     html { scroll-behavior: smooth; }
@@ -23,7 +29,7 @@
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       background: var(--bg);
-      color: #E5E5E5;
+      color: var(--text-primary);
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
     }
@@ -42,7 +48,7 @@
       background: transparent;
     }
     .site-nav.scrolled {
-      background: rgba(10,10,10,0.85);
+      background: var(--nav-scrolled);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
       border-bottom: 1px solid var(--glass-border);
@@ -332,16 +338,16 @@
   <div class="stats-bar">
     <div class="stats-inner">
       <div>
-        <div class="stat-number">10+</div>
-        <div class="stat-label">Years Experience</div>
+        <div class="stat-number">Serving</div>
+        <div class="stat-label"></div>
       </div>
       <div>
-        <div class="stat-number">2,000+</div>
-        <div class="stat-label">Happy Customers</div>
+        <div class="stat-number">5 ★</div>
+        <div class="stat-label">Google Rating</div>
       </div>
       <div>
-        <div class="stat-number">5.0</div>
-        <div class="stat-label">★ Star Rating</div>
+        <div class="stat-number">Local</div>
+        <div class="stat-label">Community Business</div>
       </div>
     </div>
   </div>
@@ -417,18 +423,18 @@
     <div class="card-grid">
             <div class="glass-card">
               <div class="text-accent mb-3 tracking-widest">★★★★★</div>
-              <p class="text-gray-300 italic mb-4">"I floated out of there. Best massage I've ever had."</p>
-              <p class="text-white font-semibold text-sm">— Patricia N.</p>
-            </div>
-            <div class="glass-card">
-              <div class="text-accent mb-3 tracking-widest">★★★★★</div>
-              <p class="text-gray-300 italic mb-4">"They found knots I didn't even know I had. Feel like a new person."</p>
-              <p class="text-white font-semibold text-sm">— Kevin B.</p>
+              <p class="text-gray-300 italic mb-4">"The hot stone massage was absolutely heavenly. I'm hooked."</p>
+              <p class="text-white font-semibold text-sm">— Laura M.</p>
             </div>
             <div class="glass-card">
               <div class="text-accent mb-3 tracking-widest">★★★★★</div>
               <p class="text-gray-300 italic mb-4">"Bought a monthly package. Best money I spend on myself."</p>
               <p class="text-white font-semibold text-sm">— Natalie C.</p>
+            </div>
+            <div class="glass-card">
+              <div class="text-accent mb-3 tracking-widest">★★★★★</div>
+              <p class="text-gray-300 italic mb-4">"They found knots I didn't even know I had. Feel like a new person."</p>
+              <p class="text-white font-semibold text-sm">— Kevin B.</p>
             </div>
     </div>
   </section>
